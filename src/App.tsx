@@ -17,8 +17,8 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const f = await (
-        await fetch("http://localhost:8000/data.xlsx")
+      const f = await(
+        await fetch("https://www.maxrosenb.com/data.xlsx")
       ).arrayBuffer();
       const wb = read(f);
       const ws = wb.Sheets[wb.SheetNames[0]];
